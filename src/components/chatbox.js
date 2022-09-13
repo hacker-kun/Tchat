@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { useLocation } from "react-router-dom"
 import Moment from 'react-moment'
 import { io } from "socket.io-client"
+import './chatbox.css';
 
 const ChatRoom = () => {
 
@@ -52,7 +53,7 @@ const ChatRoom = () => {
     }
 
     return (
-        <div className="py-4 m-5 w-50 shadow bg-white text-dark border rounded container" >
+        <div className="py-4 m-5 w-50 shadow bg-white text-dark border rounded container chatbox" >
                 <div className="text-center px-3 mb-4 text-capitalize">
                     <h1 className="text-warning mb-4">Talkerr</h1>
                 </div>
