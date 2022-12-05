@@ -16,7 +16,7 @@ const ChatRoom = () => {
     const [ socket, setSocket ] = useState()
 
     useEffect(() => {
-        const socket = io("https://tchat-backend.vercel.app/")
+        const socket = io("https://meek-dodol-95ee98.netlify.app/")
         setSocket(socket)
 
         socket.on("connect", () => {
